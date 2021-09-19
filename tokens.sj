@@ -1,0 +1,17 @@
+[] = Loop
+{} = Function
+() = Integer
+;: = String
+!  = Array size
+>  = Move current array slot forward by one
+<  = Move current array slot backward by one
+*  = Addition modifier
+/  = Subtraction modifier
++  = Add one to the currently selected array slot
+-  = Subtract one from the currently selected array slot
+,  = Get character from console
+.  = Put character from array slot
+~  = Map label to array slot
+$  = Jump to label mapped to the specified array slot
+%  = Execute function mapped to the specified array slot
+?  = Clear array slot
