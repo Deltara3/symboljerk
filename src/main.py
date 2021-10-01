@@ -1,8 +1,18 @@
 from sys import argv
+from platform import system
 
 if len(argv) == 1:
-    print("Missing argument: File path.")
-    exit()
+    try:
+        if len(system()) == 0:
+            os_name = "Undetermined"
+        else:
+            os_name = system()
+        print(f"Symboljerk v0.0.1-dev\nRunning on \"{os_name}\"")
+        while True:
+            code_input = input(">>> ")
+    except KeyboardInterrupt:
+        print("\nCTRL + C pressed, exiting.")
+        exit()
 else:
     pass
 

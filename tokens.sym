@@ -1,7 +1,7 @@
 [] = Loop
 {} = Function
 () = Integer
-;: = String
+:: = String
 !  = Array size
 >  = Move current array slot forward by one
 <  = Move current array slot backward by one
@@ -15,3 +15,4 @@
 $  = Jump to label mapped to the specified array slot
 %  = Execute function mapped to the specified array slot
 ?  = Clear array slot
+;  = Quit
